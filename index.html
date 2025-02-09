@@ -76,7 +76,37 @@
             background: #00ffff;
             color: #000;
         }
-    </style>
+        
+            header, footer {
+                background-color: #87ceeb;
+                padding: 20px;
+                font-size: 24px;
+                color: white;
+            }
+            .content {
+                padding: 20px;
+            }
+            .server-image {
+                width: 80%;
+                max-width: 600px;
+                margin: 20px 0;
+            }
+            .rating {
+                font-size: 24px;
+                margin: 20px 0;
+            }
+            .stars {
+                cursor: pointer;
+                color: gray;
+            }
+            .stars:hover,
+            .stars:hover ~ .stars {
+                color: gold;
+            }
+        </style>
+      
+          
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
@@ -87,11 +117,11 @@
     <section id="hero">
         <h2>Welcome to ThunderBound</h2>
         <p>Your one-stop shop for epic games!</p>
-        <button onclick="showGames()">Download Any Thing You Want!</button>
+        <button onclick="">About US</button>
     </section>
     
     <section id="games">
-        <h2>Featured Games</h2>
+        <h2>Featured Games + Apps</h2>
         <div class="game-container">
             <!-- Manually add game details below -->
             <div class='game-card'>
@@ -130,12 +160,76 @@
                 <p>The latest version of Storage Hunter Simulator free download</p>
                 <a href='https://cdn1.koyso.com/Storage.Hunter.v11468.rar?verify=1739099099-VdEdmx9%2F4MwseW4QaBaNLBSKosEH1ZWcYncH2xkvm1A%3D' target='_blank'><button class='purchase-btn'>Download</button></a>
             </div>
-            
-            
+            <div class='game-card'>
+                <img src='Poppy1.PNG' alt='PoppyPlayTimeChapter All chapters'>
+                <h3>All Chapters!</h3>
+                <p>all chapters of PoppyPlayTime free download --> Password- 123</p>
+                <a href='https://d-07.winudf.com/b/exe/R0xQX2luc3RhbGxlcl85MDAyMjMxNTBfbWFya2V0XzE3MTkzODg3MjQ3MThfMzViNmE0NTE?_fn=UG9wcHkgUGxheXRpbWUgQ2hhcHRlciAxLmV4ZQ&download_id=pc_4ecd7156-1503-4267-a7d7-4272d9a2bcb5&k=702a6187ad6fd80e122ec16b224711ca67a9f6e9' target='_blank'><button class='purchase-btn'>Download</button></a>
+            </div>
+           
+            <div class='game-card'>
+                <img src='rocket.PNG' alt='Rocket League'>
+                <h3>Latest Version (2025)</h3>
+                <p>Latest Version of Rocket League FREE Download --> Password- 123</p>
+                <a href='https://download1591.mediafire.com/di3d27gu1wogGktmxYksdS8e1p6Qzu9cNCT9m3muTw7Ws7TwGzngKp0Frln_hISf_komXSQJU8CN-OpM2M2siuHP0EtGFOa6h3goEhK45Tz5FIpYFFbxWaCLi2Fie7EEYTO9CGqg2i9MbAtypowWQll6-SA4mI55y6lFM7TBho8rcp4/jgs90ul9lps9590/Rocket+League.zip' target='_blank'><button class='purchase-btn'>Download</button></a>
+            </div>
+            <div class='game-card'>
+                <img src='Gas.PNG' alt='Gas Station Simulator'>
+                <h3>Latest Version (2025)</h3>
+                <p>Latest Version of Gas Station Simulator FREE Download --> Password- 123</p>
+                <a href='https://anygame.net/pc-games/gas-station-simulator/?id=393936020000' target='_blank'><button class='purchase-btn'>Download</button></a>
+            </div>
+            <div class='game-card'>
+                <img src='city.PNG' alt='Cities skylines'>
+                <h3>Latest Version (2025)</h3>
+                <p>Latest Version of Cities Skylines FREE Download --> Password- 123</p>
+                <a href='https://anygame.net/pc-games/cities-skylines/?id=843132922000' target='_blank'><button class='purchase-btn'>Download</button></a>
+            </div>
+            <div class='game-card'>
+                <img src='Forza.PNG' alt='Forza Horizon 5'>
+                <h3>Latest Version (2025)</h3>
+                <p>Latest Version of forza Horizon 5 FREE Download --> Password- 123</p>
+                <a href='https://anygame.net/pc-games/forza-horizon-5/?id=948569640000' target='_blank'><button class='purchase-btn'>Download</button></a>
+            </div>
             
             <!-- Repeat for more games up to 50 -->
         </div>
     </section>
+   <hr>
+    <br>
+    
+</head>
+<body>
+    <header>
+        Welcome to Our ThunderBound jouney introduction
+    </header>
+    <div class="content">
+        <h2>About Us</h2>
+        <p>We are a group of friends starting an awesome jouney to make a discord server in which every one every one will be having acces to come in our public minecraft server we also have all Paid games like forza,GTA5 for FREE this is going to be fun we are near to launch our games also. IF it gets success we will launch our FREE & Paid Minecraft Server Hosting🎉</p>
+        <img src="SMPraw.png" alt="" class="server-image">
+
+
+
+        
+
+        <h2>Rate Our Journey</h2>
+        <div class="rating">
+            <span class="stars" onclick="rate(1)">&#9733;</span>
+            <span class="stars" onclick="rate(2)">&#9733;</span>
+            <span class="stars" onclick="rate(3)">&#9733;</span>
+            <span class="stars" onclick="rate(4)">&#9733;</span>
+            <span class="stars" onclick="rate(5)">&#9733;</span>
+        </div>
+    </div>
+   
+
+    <script>
+        function rate(stars) {
+            alert('You rated ' + stars + ' stars!');
+        }
+    </script>
+</body>
+</html>
     
     <footer>
         <p>&copy; 2025 ThunderBound. All rights reserved.</p>
@@ -149,5 +243,6 @@
             gsap.to("#games", { duration: 1, opacity: 1, scale: 1 });
         }
     </script>
+
 </body>
 </html>
