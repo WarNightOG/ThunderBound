@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThunderBound - Buy Games</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -103,6 +105,47 @@
             .stars:hover ~ .stars {
                 color: gold;
             }
+             /* Styles for fixed buttons */
+        .fixed-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .fixed-buttons button {
+            padding: 10px 15px;
+            background-color: cyan;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+        }
+        .fixed-buttons button:hover {
+            background-color: #00aaff;
+        }
+        .fixed-buttons i {
+            font-size: 20px;
+        }
+        
+        /* Styles for additional links above footer */
+        .extra-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .extra-links a {
+            display: block;
+            margin: 5px 0;
+            color: cyan;
+            text-decoration: none;
+        }
+        .extra-links a:hover {
+            text-decoration: underline;
+        }
         </style>
       
           
@@ -251,8 +294,7 @@
    <hr>
     <br>
     
-</head>
-<body>
+
     
         
    
@@ -281,12 +323,8 @@
             alert('You rated ' + stars + ' stars!');
         }
     </script>
-</body>
-</html>
-    
-    <footer>
-        <p>&copy; 2025 ThunderBound. All rights reserved.</p>
-    </footer>
+
+   
 
     <script>
         gsap.from(".logo", { duration: 1, y: -50, opacity: 0, ease: "bounce.out" });
@@ -296,6 +334,35 @@
             gsap.to("#games", { duration: 1, opacity: 1, scale: 1 });
         }
     </script>
+    <div class="content">
+        <!-- Your website content here -->
+    </div>
+    
+    <!-- Additional Links Above Footer -->
+    
+    <a href="https://discord.gg/HsAyDY4tFd" target="_blank">Join Our Discord!</a>
+    <hr>
+        <a href="https://mail.google.com/mail/u/0/#search/hassanjavedelt%40gmail.com?compose=new">Email Me </a>
+    
+    
+    <!-- Fixed Buttons in Bottom Right Corner -->
+    <!-- Fixed Buttons in Bottom Right Corner -->
+<!-- Fixed Buttons in Bottom Right Corner -->
+<div class="fixed-buttons">
+    <button onclick="window.open('https://discord.gg/HsAyDY4tFd', '_blank')">
+        <i class="fa-brands fa-discord"></i> Discord
+    </button>
+    <button onclick="alert('Chat on WhatsApp!')">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </button>
+</div>
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <footer>
+        <p>&copy; 2025 ThunderBound. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
