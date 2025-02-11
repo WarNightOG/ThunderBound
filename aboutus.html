@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUs</title>
+    <style>
+        /* General Styling */
+/* General Styling */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Snowfall Effect */
+@keyframes snowfall {
+    from { transform: translateY(-10px); }
+    to { transform: translateY(100vh); }
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: white;
+    font-size: 10px;
+    animation: snowfall linear infinite;
+    opacity: 0.8;
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px cyan;
+    text-align: right;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: cyan;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(0, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    color: cyan;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: 80px;
+}
+
+/* About Us Section */
+.content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px cyan;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Images & Links */
+.server-image {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px cyan;
+    transition: transform 0.5s ease-in-out;
+}
+
+.server-image:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: cyan;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: grey;
+}
+
+/* Rating Stars */
+.rating {
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.stars {
+    color: grey;
+    transition: color 0.3s;
+}
+
+.stars:hover, .stars:active {
+    color: cyan;
+}
+
+/* Footer */
+footer {
+    background: black;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 15px cyan;
+}
+
+/* Fixed Buttons */
+.fixed-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fixed-buttons button {
+    background: cyan;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.fixed-buttons button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+    </style>
+</head>
+<body>
+ 
+<h1>Welcome to ThunderBound</h1>
+<nav>
+    <ul>
+        <li><a href="#minecraft">Minecraft-Section </a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+        <li><a href="/index.html">Home</a></li>
+    </ul>
+</nav>
+<div class="content">
+    <h2>About Us</h2>
+    <p>We are a group of friends starting an awesome jouney to make a discord server in which every one every one will be having acces to come in our public minecraft server we also have all Paid games like forza,GTA5 for FREE this is going to be fun we are near to launch our games also. IF it gets success we will launch our FREE & Paid Minecraft Server Hosting🎉</p>
+    <img src="SMPraw.png" alt="" class="server-image">
+    <h2>
+            History of this Journey
+           </h2>
+           <p>
+            This epic thing starts in 2019 in the corona virus time when everyone
+            was sitting free in his home, A SMP came in the was of light called Four Legends created by HassaJaved
+            also known as (WarNightOG) He and his 2 cousins Maryam also known as (silent_Girl or Pro_Devil_Girl)
+            and AzkaRabeeb also known as (Queen_Girl) and one of his enemy, his brother they started playing that 
+            was a time than i miss every time. We did the things that no one did. Then a time came when
+            I HassanJaved (WarNightOG) grew up and tried to make website from Google sites and Wordpress, I took 
+            success but not that much to cross the sky and reach the space. I learned too much and too much about
+            how the universe of Internet works I learned and understood the algorithm of youtube facebook instagram
+            etc. Then a time came when i got interested in Programming. I was already very disapointed because
+            of my father's job was taken resently. (2023) July-23 I found a course of of CodeWithHarry
+            of Python. I learned first 2 chapters and i adopted its not enough for me i did only 2 chapters 
+            to understand some consepts but my vision was not like this! I did his Full Web devolopment course's
+            first 30 videos understanded 3 legendary languages (HTML,CSS,JavaScript) Then my School's
+            anuall papers got started and I defeated my enemies in Exames may i tell you it was not a small School Exames
+            it was United Charter School near to Becon House standard After some success from school be holidays were
+            started I enjoyed and mostly invested time to this. There was a time when i felt so alone doing Programming
+            because my brothers were always abusing me "Codin is nothing, Play games" It was very hard to admit
+            but i left their opinion. And started making websites i struglled too much like I cannot explain
+            how i felt at night midnight then evening these times were killing me! But as all of we known 
+            "When there is no calm out side of you, You must find the calm inside of you" this Ninjago 
+            dialog took me away from this un named feeling and because taste of patience is better than
+            rocks of mud.2024 I made websites,Ai bots Servers. And i applied every thing. and now 2025 I am
+            able to make ChatGPT AI bots Proper Websites even in this website where you are reading
+            is made by my pure hands. Now in 2025 I am starting a jouney called "Fog into the unknown"
+            This wil help me to grow more but i will never forget this feeling i had more than 2 Years.
+            Just remember There will be a time when every where arround will be caous so remember
+            "When there is no calm outside of you,you must find the calm inside of you."
+           </p>
+
+
+
+    
+
+    <h2>Rate Our Journey</h2>
+    <div class="rating">
+        <span class="stars" onclick="rate(1)">&#9733;</span>
+        <span class="stars" onclick="rate(2)">&#9733;</span>
+        <span class="stars" onclick="rate(3)">&#9733;</span>
+        <span class="stars" onclick="rate(4)">&#9733;</span>
+        <span class="stars" onclick="rate(5)">&#9733;</span>
+    </div>
+</div>
+
+
+<script>
+    function rate(stars) {
+        alert('You rated ' + stars + ' stars!');
+    }
+</script>
+
+
+
+<script>
+    gsap.from(".logo", { duration: 1, y: -50, opacity: 0, ease: "bounce.out" });
+    gsap.from(".game-card", { duration: 1, y: 100, opacity: 0, stagger: 0.05 });
+    
+    function showGames() {
+        gsap.to("#games", { duration: 1, opacity: 1, scale: 1 });
+    }
+</script>
+<div class="content">
+    <!-- Your website content here -->
+</div>
+
+<!-- Additional Links Above Footer -->
+
+<a href="https://discord.gg/HsAyDY4tFd" target="_blank">Join Our Discord!</a>
+<hr>
+    <a href="https://mail.google.com/mail/u/0/#search/hassanjavedelt%40gmail.com?compose=new">Email Me </a>
+
+
+<!-- Fixed Buttons in Bottom Right Corner -->
+<!-- Fixed Buttons in Bottom Right Corner -->
+<!-- Fixed Buttons in Bottom Right Corner -->
+<div class="fixed-buttons">
+<button onclick="window.open('https://discord.gg/HsAyDY4tFd', '_blank')">
+    <i class="fa-brands fa-discord"></i> Discord
+</button>
+<button onclick="alert('Chat on WhatsApp!')">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+</button>
+</div>
+
+
+</div>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<footer>
+    <p>&copy; 2025 ThunderBound. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>
