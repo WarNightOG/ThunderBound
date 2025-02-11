@@ -145,7 +145,38 @@
         }
         .extra-links a:hover {
             text-decoration: underline;
-        }
+            }
+            nav {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            
+            nav ul {
+                list-style: none;
+                display: flex;
+                gap: 10px; /* Reduced spacing */
+                padding: 0;
+                margin: 0;
+            }
+            
+            nav ul li {
+                display: inline;
+            }
+            
+            nav ul li a {
+                text-decoration: none;
+                color: black; /* Changed to black */
+                font-weight: bold;
+                padding: 6px 10px; /* Slightly reduced padding */
+                border-radius: 5px;
+                transition: background 0.3s ease;
+            }
+            
+            nav ul li a:hover {
+                background: rgba(0, 0, 0, 0.1); /* Subtle hover effect */
+            }
+            
         </style>
       
           
@@ -155,13 +186,21 @@
 <body>
     <header>
         <h1 class="logo">ThunderBound</h1>
+        <nav>
+            <ul>
+                <li><a href="#minecraft">Minecraft-Section </a></li>
+                <li><a href="/aboutus.html">About Us</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
-    
+ 
     <section id="hero">
         <h2>Welcome to ThunderBound</h2>
         <p>Your one-stop shop for epic games!</p>
-        <button onclick="">Organisers: Hassan,Ammar,Mustafa,Ibraheem,Hussain,Usman.Shahzain</button>
+        <button onclick="">Organisers: Hassan,Ammar,Maryam,Mustafa,Ibraheem,Hussain,Usman.Shahzain</button>
     </section>
+
     
     <section id="games">
         <h2>Featured Games + Apps</h2>
