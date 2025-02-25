@@ -309,7 +309,110 @@ button:hover {
 .social-icons a:hover {
     transform: scale(1.2);
 }
+  }
 
+    nav {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #bbb;
+    }
+
+    .mini-editor-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .mini-editor {
+      background-color: #444;
+      border-radius: 5px;
+      padding: 0.5rem;
+      margin-left: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .mini-editor input[type="text"] {
+      background-color: transparent;
+      border: none;
+      color: white;
+      outline: none;
+      padding: 0.3rem 0.5rem;
+      font-size: 1rem;
+    }
+
+    .mini-editor button {
+      background-color: #555;
+      border: none;
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .mini-editor button:hover {
+      background-color: #666;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      nav ul li {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        width: 100%;
+        text-align: center;
+      }
+
+      .mini-editor-container {
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .mini-editor {
+        margin-left: 0;
+      }
+    }
             
             
             
@@ -360,6 +463,21 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     style="margin-top: 15px; padding: 12px 20px; background: cyan; color: black; font-size: 18px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s;">
     🎥 Watch our Trailer on YouTube
     </a>
+      <nav>
+    <div class="logo">My Website</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="mini-editor-container">
+      <div class="mini-editor">
+        <input type="text" placeholder="Type something...">
+        <button>Go</button>
+      </div>
+    </div>
+  </nav>
     
     <section id="games">
         <h2>Featured Games + Apps</h2>
